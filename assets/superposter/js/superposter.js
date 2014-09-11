@@ -79,12 +79,12 @@ function addCheckbox(name, id) {
 }
 
 function makePost(groupId, message) {
-
+    console.log("Group id - "+groupId);
     FB.api("/" + groupId + "/feed", "post", {"message": message}, function (resp) {
         if (resp.id) {
             show_notification('Posted', "Posted to: '" + $("#groups").find("label[for=cb" + groupId + "]").html() + "'.", 'success');
         } else {
-            show_notification('Failed', "Failed to post to the selected groups.", 'error');
+            show_notification('Failed',resp + "Failed to post to the selected groups.", 'error');
         }
     })
 
