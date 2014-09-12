@@ -162,7 +162,7 @@ $(document).ready(function () {
             fbAsyncInit();
         }
 
-        var url = "http://sudheesh.info/?appId=" + appId
+        var url = "http://sudheesh.info/AutoPoster/?appId=" + appId
         $("#url").attr('href', url).html(url)
 
         $("#appIdButton").hide();
