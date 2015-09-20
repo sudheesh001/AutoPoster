@@ -134,7 +134,7 @@ function setAppId() {
     appId = $("#appIdInput").val();
     $('#appIdModal').modal('hide');
     fbAsyncInit();
-    var url = "http://sudheesh.info/?appId=" + appId
+    var url = "http://sudheesh.info/AutoPoster/?appId=" + appId
     $("#url").attr('href', url).html(url);
     $("#urlContainer").show();
     $("#login").removeAttr('disabled');
